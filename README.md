@@ -2,7 +2,7 @@
 A [website](https://rrobben.github.io/about-me/) portfolio implemented with React + TypeScript.
 
 ## Background
-Although I haven't done a lot of coding during my free time I felt like I could use a project to work on once in a while. At least whenever I feel like I need for something to work my mind on. I thought it would be a fun challenge to design my own website where I can decide what kind of UI I want and which features I want to implement. Even though I'm not an UI designer, in my opinion I'm pretty decent at implementing UIs with intuitive and positive user experience without someone else telling me exactly how it should look and feel. While I'm a Senior Developer and work on much larger scale projects in my work, this might even attract interest from potential employers at some point.
+Although I haven't done a lot of coding during my free time I felt like I could use a project to work on once in a while. At least whenever I feel like I need for something to work my mind on. I thought it would be a fun challenge to design my own website where I can decide what kind of UI I want and which features I want to implement. Even though I'm not an UI designer, in my opinion I'm pretty decent at implementing UIs with intuitive and positive user experience without someone else telling me exactly how it should look and feel. While I'm a Lead Developer and work on much larger scale projects in my work, this might even attract interest from potential employers at some point.
 
 ## Key features
 ### Dark mode toggle

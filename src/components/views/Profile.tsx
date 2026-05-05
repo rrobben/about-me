@@ -12,9 +12,11 @@ const Profile = () => {
                 <MyAvatar size="lg" />
             </CenteredBox>
             <LayoutSubheader text={t("Profile")} />
-            <Typography variant="body1">
-                {t("aboutMeContent")}
-            </Typography>
+            {t("aboutMeContent").split("<br /><br />").map((paragraph, i) => (
+                <Typography key={i} variant="body1" sx={{ mb: 2 }}>
+                    {paragraph}
+                </Typography>
+            ))}
         </Layout>
     );
 };
