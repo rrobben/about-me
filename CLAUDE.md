@@ -1,6 +1,6 @@
 # about-me
 
-Personal portfolio site built with React + TypeScript + Vite. Uses MUI for components, react-i18next for EN/FI translations, and react-router-dom (hash router) for navigation.
+Personal portfolio site built with React + TypeScript + Vite. Uses MUI for components, react-i18next for EN/FI translations, and react-router (hash router) for navigation.
 
 ## Architecture
 
@@ -26,7 +26,11 @@ Current keys in order: `Architecture`, `AIAssisted` | `React`, `.NET`, `Flutter`
 
 ## Layout children type constraint
 
-`Layout` types `children` as `JSX.Element | JSX.Element[]`. If a child is a `.map()` call mixed with other sibling children, wrap it in a `<>...</>` Fragment — otherwise TypeScript will reject the array-within-children as a type error at build time.
+`Layout` types `children` as `JSX.Element | JSX.Element[]` (with `import type { JSX } from "react"` — JSX is module-scoped in React 19). If a child is a `.map()` call mixed with other sibling children, wrap it in a `<>...</>` Fragment — otherwise TypeScript will reject the array-within-children as a type error at build time.
+
+## React contexts
+
+Contexts (`I18nContext`, `ColorModeContext`) live in their own files, separate from the Provider component that consumes them. The `react-refresh/only-export-components` lint rule rejects a file that exports both a context and a component. New contexts should follow the same pattern: `XxxContext.ts` for the `createContext` call, `XxxProvider.tsx` for the component.
 
 ## Deployment
 

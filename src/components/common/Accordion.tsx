@@ -73,13 +73,13 @@ const AccordionGroup = ({ items }: Props) => {
                 <AccordionSummary expandIcon={<ExpandMoreIcon />} sx={{ backgroundColor: "rgba(255, 255, 255, .05)" }}>
                     {i.subheader ? (
                         <>
-                            <Typography textAlign="initial" sx={{ width: "50%", flexGrow: 1 }}>
+                            <Typography sx={{ textAlign: "initial", width: "50%", flexGrow: 1 }}>
                                 {i.header}
                             </Typography>
                             <Typography sx={{ color: "text.secondary", mr: 2 }}>{i.subheader}</Typography>
                         </>
                     ) : (
-                        i.header
+                        <Typography>{i.header}</Typography>
                     )}
                 </AccordionSummary>
                 <StyledAccordionDetails>

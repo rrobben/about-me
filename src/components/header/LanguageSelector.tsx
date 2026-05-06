@@ -7,7 +7,7 @@ import LanguageIcon from "@mui/icons-material/Language";
 import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 import { useTranslation } from "react-i18next";
 import { useContext, useState } from "react";
-import { I18nContext } from "../../i18n/I18nProvider";
+import { I18nContext } from "../../i18n/I18nContext";
 
 const langs = ["en", "fi"];
 

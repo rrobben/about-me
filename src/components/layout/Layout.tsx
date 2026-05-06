@@ -1,3 +1,4 @@
+import type { JSX } from "react";
 import { SvgIconTypeMap, SxProps, styled } from "@mui/material";
 import Avatar from "@mui/material/Avatar";
 import Box from "@mui/material/Box";
@@ -56,7 +57,7 @@ export const LayoutHeader = ({ text, Icon }: HeaderProps) => (
 );
 
 export const LayoutSubheader = ({ text }: HeaderProps) => (
-    <Typography variant="h5" mb={3}>
+    <Typography variant="h5" sx={{ mb: 3 }}>
         {text}
     </Typography>
 );

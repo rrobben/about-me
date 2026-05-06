@@ -33,12 +33,12 @@ const Contact = () => {
                 <List>
                     {contacts.map(({ Icon, text, href }) => (
                         <ListItem key={text}>
-                            <ListItemIcon>
+                            <ListItemIcon sx={{ minWidth: 56 }}>
                                 <Avatar sx={{ backgroundColor: "background.icon" }}>
                                     <Icon />
                                 </Avatar>
                             </ListItemIcon>
-                            <ListItemText primaryTypographyProps={{ textAlign: "initial" }}>
+                            <ListItemText slotProps={{ primary: { sx: { textAlign: "initial" } } }}>
                                 {href ? (
                                     <Link target="_blank" href={href}>
                                         {t(text)}

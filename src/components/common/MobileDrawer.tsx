@@ -1,3 +1,4 @@
+import type { JSX } from "react";
 import Toolbar from "@mui/material/Toolbar";
 import Drawer, { DrawerProps } from "@mui/material/Drawer";
 

@@ -1,4 +1,5 @@
-import { createHashRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter } from "react-router";
+import { RouterProvider } from "react-router/dom";
 import App from "./components/layout/App.tsx";
 import Profile from "./components/views/Profile.tsx";
 import Technologies from "./components/views/Technologies.tsx";

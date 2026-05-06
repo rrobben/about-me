@@ -1,3 +1,4 @@
+import type { JSX } from "react";
 import Box from "@mui/material/Box";
 import IconButton from "@mui/material/IconButton";
 import MobileDrawer from "./MobileDrawer";

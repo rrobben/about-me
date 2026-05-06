@@ -1,7 +1,7 @@
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Switch from "@mui/material/Switch";
 import { SxProps, styled, useTheme } from "@mui/material";
-import { ColorModeContext } from "../../theme/Provider";
+import { ColorModeContext } from "../../theme/ColorModeContext";
 import { useTranslation } from "react-i18next";
 import { useContext } from "react";
 

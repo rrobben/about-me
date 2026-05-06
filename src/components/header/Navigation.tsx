@@ -11,7 +11,7 @@ import WorkIcon from "@mui/icons-material/Work";
 import SchoolIcon from "@mui/icons-material/School";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 import { useTranslation } from "react-i18next";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router";
 import { OverridableComponent } from "@mui/material/OverridableComponent";
 import { SvgIconTypeMap, SxProps } from "@mui/material";
 import { useCurrentPath } from "../../hooks";

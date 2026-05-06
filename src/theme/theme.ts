@@ -3,13 +3,15 @@ import { PaletteMode, Theme, ThemeOptions, responsiveFontSizes } from "@mui/mate
 export const themeConfig: ThemeOptions = {
     components: {
         MuiTypography: {
-            defaultProps: {
-                textAlign: "center",
+            styleOverrides: {
+                root: {
+                    textAlign: "center",
+                },
             },
         },
         MuiListItemText: {
             defaultProps: {
-                primaryTypographyProps: { textAlign: "initial" },
+                slotProps: { primary: { sx: { textAlign: "initial" } } },
             },
         },
         MuiIconButton: {

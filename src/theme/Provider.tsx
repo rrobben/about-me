@@ -1,11 +1,10 @@
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
-import { createContext, useMemo } from "react";
+import { useMemo, type JSX } from "react";
 import { PaletteMode } from "@mui/material";
 import { getPalette, getResponsiveFontSizes, themeConfig } from "./theme.ts";
 import { useLocalStorage } from "usehooks-ts";
-
-export const ColorModeContext = createContext({ toggleColorMode: () => {} });
+import { ColorModeContext } from "./ColorModeContext";
 
 interface Props {
     children: JSX.Element | JSX.Element[];

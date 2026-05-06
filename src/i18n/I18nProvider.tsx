@@ -1,10 +1,8 @@
-import { createContext, useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, type JSX } from "react";
 import { useTranslation } from "react-i18next";
 import { useLocalStorage } from "usehooks-ts";
 import { initI18n } from "./i18n";
-
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-export const I18nContext = createContext({ language: "en", changeLanguage: (_lng: string) => {} });
+import { I18nContext } from "./I18nContext";
 
 interface Props {
     children: JSX.Element | JSX.Element[];
