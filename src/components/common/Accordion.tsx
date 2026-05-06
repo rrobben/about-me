@@ -30,6 +30,16 @@ const StyledAccordionDetails = styled(AccordionDetails)(({ theme }) => ({
     "& a": {
         color: theme.palette.primary.main,
     },
+    "& ul": {
+        textAlign: "left",
+        paddingLeft: theme.spacing(3),
+    },
+    "& li": {
+        marginBottom: theme.spacing(1),
+    },
+    "& li:last-child": {
+        marginBottom: 0,
+    },
 }));
 
 interface AccordionItem {
